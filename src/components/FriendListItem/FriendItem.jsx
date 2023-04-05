@@ -1,4 +1,6 @@
+import PropTypes from 'prop-types';
 import { StatsListItem, IsOnlineIndicator } from './FriendListItem.styled';
+
 const FriendItem = ({ name, avatar, isOnline }) => {
   return (
     <StatsListItem>
@@ -9,3 +11,9 @@ const FriendItem = ({ name, avatar, isOnline }) => {
   );
 };
 export default FriendItem;
+
+FriendItem.propTypes = {
+  name: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
+};

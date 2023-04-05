@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const TransactionHistoryItem = ({ type, amount, currency }) => {
   return (
     <tr>
@@ -9,3 +11,9 @@ const TransactionHistoryItem = ({ type, amount, currency }) => {
 };
 
 export default TransactionHistoryItem;
+
+TransactionHistoryItem.propTypes = {
+  type: PropTypes.string.isRequired,
+  amount: PropTypes.string.isRequired,
+  currency: PropTypes.string.isRequired,
+};
