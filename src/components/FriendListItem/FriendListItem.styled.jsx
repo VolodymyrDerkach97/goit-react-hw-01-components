@@ -25,6 +25,9 @@ export const IsOnlineIndicator = styled.span`
         return theme.colors.green;
       case false:
         return theme.colors.red;
+
+      default:
+        return theme.colors.white;
     }
   }};
 `;
